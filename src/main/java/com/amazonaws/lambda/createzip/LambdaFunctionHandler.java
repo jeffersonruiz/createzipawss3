@@ -22,8 +22,8 @@ import com.amazonaws.services.s3.model.S3ObjectInputStream;
 
 public class LambdaFunctionHandler implements RequestHandler<Object, String> {
 
-	private AWSCredentials credentials = new BasicAWSCredentials("AKIAUOFMKZPOZRUGNNXB",
-			"vVP2gJabsnEjKGXc51A86lOM1ynnkqtRA8gf7DYu");
+	private AWSCredentials credentials = new BasicAWSCredentials("",
+			"");
 
 	private AmazonS3 s3client = AmazonS3ClientBuilder.standard()
 			.withCredentials(new AWSStaticCredentialsProvider(credentials)).withRegion(Regions.US_EAST_1).build();
